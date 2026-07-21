@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# PyCharm
+.idea/
+
+# OS
+.DS_Store
+
+# Secrets — API keys if you move off Yahoo later
+.env
+*.key
+
+# Derived data (regenerate with build_panel.py)
+data/panel.csv
+
+# Model artifacts
+*.pt
+*.pth
+*.joblib
+runs/

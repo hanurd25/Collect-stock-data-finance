@@ -1,0 +1,91 @@
+# Sector baskets. Keep each basket internally comparable — same accounting
+# regime and same business model matter more than same country.
+#
+# VERIFY EVERY TICKER before the first real run:
+#   python collect.py --check
+# Yahoo suffixes: .OL Oslo, .ST Stockholm, .CO Copenhagen, .HE Helsinki,
+# .L London, .PA Paris, .DE Xetra, .MI Milan, .MC Madrid, .AS Amsterdam,
+# .BR Brussels, .SW Zurich. No suffix = US.
+
+banking_nordic:
+  - DNB.OL
+  - SRBNK.OL
+  - SPOG.OL
+  - MING.OL
+  - NONG.OL
+  - SVEG.OL
+  - SEB-A.ST
+  - SWED-A.ST
+  - SHB-A.ST
+  - NDA-SE.ST
+  - DANSKE.CO
+  - SYDB.CO
+  - JYSK.CO
+
+banking_europe:
+  - HSBA.L
+  - BARC.L
+  - LLOY.L
+  - NWG.L
+  - BNP.PA
+  - ACA.PA
+  - GLE.PA
+  - ISP.MI
+  - UCG.MI
+  - SAN.MC
+  - BBVA.MC
+  - CABK.MC
+  - INGA.AS
+  - KBC.BR
+  - CBK.DE
+  - UBSG.SW
+
+banking_us:
+  - JPM
+  - BAC
+  - WFC
+  - C
+  - USB
+  - PNC
+  - TFC
+  - FITB
+  - KEY
+  - RF
+  - CFG
+  - MTB
+  - HBAN
+  - ZION
+
+insurance_nordic:
+  - PROT.OL
+  - GJF.OL
+  - STB.OL
+  - TRYG.CO
+  - SAMPO.HE
+
+insurance_europe:
+  - ALV.DE
+  - MUV2.DE
+  - HNR1.DE
+  - AXA.PA
+  - CS.PA
+  - G.MI
+  - ZURN.SW
+  - SREN.SW
+  - ADM.L
+  - LGEN.L
+  - AV.L
+  - PHNX.L
+
+insurance_us:
+  - PGR
+  - ALL
+  - TRV
+  - CB
+  - AIG
+  - HIG
+  - CINF
+  - WRB
+  - MET
+  - PRU
+  - AFL
